@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hystrixdashboard
+
+server:
+  port: 6001
+
+management:
+  security: false
+  endpoints:
+    web:
+      exposure:
+        include: health,info,hystrix.stream
+
+#eureka:
+#  client:
+#    service-url:
+
+#      defaultZone: http://localhost:8001/eureka/,http://localhost:8002/eureka/

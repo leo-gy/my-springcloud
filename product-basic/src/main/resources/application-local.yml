@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: productbasic
+  profiles:
+    active:
+
+
+server:
+  port: 9011
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8002/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  security: false
+  endpoints:
+    web:
+      exposure:
+        include: health,info,hystrix.stream

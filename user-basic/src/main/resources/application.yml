@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: userbasic
+
+server:
+  port: 9005
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8002/eureka/
